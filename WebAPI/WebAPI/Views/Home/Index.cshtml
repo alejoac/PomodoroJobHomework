@@ -381,6 +381,7 @@ $(document).ready(function () {
         if (this.secondsTotal == 0) {
             if (this.minutesTotal == 0) {
                 this.timerComplete();
+                alert("Time is up!");
                 return;
             }
             this.secondsTotal = 59;
@@ -404,7 +405,6 @@ $(document).ready(function () {
 <div class="container-fluid">
  
     <header><h1 style="margin:5px">Pomodoro Assignment</h1></header>
-  
     <hr>
     <div class="row content">
         
