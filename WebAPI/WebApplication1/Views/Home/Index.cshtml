@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script type="text/javascript">
+function GetAllEmployees() {
+        jQuery.support.cors = true;
+        $.ajax({
+            url: 'http://localhost:28895/api/values',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                alert(JSON.stringify(data));
+            },
+            error: function (x, y, z) {
+                alert("ERR is human " + JSON.stringify(x) + '\n Otherly' + JSON.stringify(y) + '\n' + JSON.stringify(y));
+            }
+        });
+}
+</script>
+
+<section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <div>
+                <table>
+                    <tr>
+                        <td><button onclick="GetAllEmployees();return false;">Get All Employees</button></td>
+                        <td>Enter Employee Id: <input type="text" id="txtEmpid" style="width:50PX" /></td>
+                        <td><button onclick="GetEmployee();return false;">Get Employee</button></td>
+                        <td>
+                            <table>
+                                <tr><td>EmpId:</td><td><input type="text" id="txtaddEmpid" /></td></tr>
+                                <tr>  <td>Emp Name:</td><td><input type="text" id="txtaddEmpName" /></td></tr>
+                                <tr> <td>Emp Department:</td><td><input type="text" id="txtaddEmpDep" /></td></tr>
+                                <tr><td>Mobile no:</td><td><input type="text" id="txtaddEmpMob" /></td></tr>
+                            </table>
+                        </td>
+                        <td><button onclick="AddEmployee();return false;">Add Employee</button></td>
+                        <td>Delete Employee <input type="text" id="txtdelEmpId" style="width:50PX" /></td>
+                        <td><button onclick="DeleteEmployee(); return false;">Delete Employee</button></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC!!!!!!!!!! gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+

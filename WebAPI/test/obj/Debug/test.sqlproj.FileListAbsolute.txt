@@ -1,0 +1,5 @@
+c:\Users\alejoacr\documents\visual studio 2015\Projects\WebAPI\test\bin\Debug\test.dacpac
+c:\Users\alejoacr\documents\visual studio 2015\Projects\WebAPI\test\obj\Debug\test.dll
+c:\Users\alejoacr\documents\visual studio 2015\Projects\WebAPI\test\obj\Debug\test.pdb
+c:\Users\alejoacr\documents\visual studio 2015\Projects\WebAPI\test\bin\Debug\test.dll
+c:\Users\alejoacr\documents\visual studio 2015\Projects\WebAPI\test\bin\Debug\test.pdb
